@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    리스트
+    <!-- thymeleaf 문법
+     서버에서 전달받은 데이터를 화면에 출력하는 문법
+     th:text : 시작태그와 끝태그 사이에 작성
+
+     ${변수}
+     -->
+     <p th:text="${date}">현재시간</p>
+    <hr>
+    <p th:text="${name}+'님 환영합니다.'">이름</p>
+
+    <a href="/bookDetail" th:text="이무진2">          </a>
+
+    <!--시작태그-->
+    <p>
+
+    <!--끝태그-->
+    </p>
+
+    <br><a href="/bookDetail">상세페이지로 이동</a>
+    <br><a href="/bookRegister">등록페이지로 이동</a>
+</body>
+</html>
